@@ -1,26 +1,31 @@
 @font-face {
     font-family: "A Gentle Touch";
-    src: url("../font/AGentleTouch.ttf");
+/*    src: url("fonts/AGentleTouch.ttf");*/
+    src:  url('fonts/AGentleTouch.ttf') format('ttf'), url('fonts/AGentleTouch.ttf') format('ttf'), url('fonts/AGentleTouch.ttf') ;
+   
     font-style: normal;
 }
 @font-face {
     font-family: "Alittle sunshine";
-    src: url("../font/Alittlesunshine.ttf");
+/*    src: url("fonts/Alittlesunshine.ttf");*/
+     src:  url('fonts/Alittlesunshine.ttf') format('ttf'), url('fonts/Alittlesunshine.ttf') format('ttf'), url('fonts/Alittlesunshine.ttf') ;
     font-style: normal;
 }
 @font-face {
     font-family: "New Athletic M54";
-    src: url("../font/NewAthleticM54.ttf");
+/*    src: url("/fonts/NewAthleticM54.ttf");*/
+    src:  url('fonts/NewAthleticM54.ttf') format('ttf'), url('fonts/NewAthleticM54.ttf') format('ttf'), url('fonts/NewAthleticM54.ttf') ;
     font-style: normal;
 }
 @font-face {
     font-family: "Walkway rounded";
-    src: url("../font/Walkwayrounded.ttf");
+/*    src: url("/fonts/Walkwayrounded.ttf");*/
+     src:  url('fonts/Walkwayrounded.ttf') format('ttf'), url('fonts/Walkwayrounded.ttf') format('ttf'), url('fonts/Walkwayrounded.ttf') ;
     font-style: normal;
 }
 .yellow-back {
     background-color: #f7d237;
-    font-family: 'A Gentle Touch', 'Alittle sunshine', 'New Athletic M54', 'Walkway rounded';
+    font-family:  'Walkway rounded';
 }
 .progress-bar p {
     margin: 0px;
@@ -88,12 +93,13 @@ select {
     float: right;
 }
 .pull-right select {
-    background: transparent;
+    background:  #684703;
     color: #F7D237;
     border: 1px solid #F7D237;
-    padding: 0px 0px;
+    padding: 0px 13px 0px 1px;
     height: 25px;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 .pull-right select:focus {
     outline: none;
@@ -132,4 +138,32 @@ ul.text-center.matop li {
 }
 p.panel-title {
     color: #F7D237;
+}
+.select-before:before {
+    position: absolute;
+    top: 169px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    color: #F7D237;
+    content: "";
+    pointer-events: none;
+    left: 46.7%;
+}
+.selects-before:before {
+    position: absolute;
+    top: 169px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    color: #F7D237;
+    content: "";
+    pointer-events: none;
+    right: 17.9%;
 }
