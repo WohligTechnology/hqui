@@ -174,3 +174,38 @@ select option {
    
   
 }
+
+/*//new css*/
+
+.blue-btn.custm-btn p {
+    text-align: center;
+    line-height: 14%;
+}
+
+.blue-btn.custm-btn {
+    padding: 1px 0px;
+    border-radius: 4px;
+}
+.cstm-padding{
+        height: 46px !important;
+
+    padding: 5px 2rem !important;
+}
+.display-inline{
+    display: inline-block;
+}
+.left-s{
+        display: inline-block;
+    float: right;
+}
+.displ-inline{
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 11px;
+}
+.pt7{
+        padding-top: 7px;
+}
+.mt100{
+    margin-top: 100px;
+}
